@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aukciono DApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <script src="index.js" type="module" defer></script>
+</head>
+<body>
+
+  <div class="pavadinimas">AUKCIONAS</div>
+  <div class="container">
+    <div class="kortele" data-id="1">
+      <p>Mąsli lapė</p>
+      <img src="images/lape1.jpg" alt="Lape 1">
+      <p class="highest-bid" data-id="1">Didžiausias statymas: Statymų nėra</p>
+      <p class="auction-state" data-id="1">Būsena: </p>
+      <p class="error" style="color: red;"></p>
+      <button class="start" data-id="1">Pradėti aukcioną</button>
+      <button class="finish" data-id="1">Stabdyti aukcioną</button>
+      <button class="place-bid" data-id="1">Pateikti statymą</button>
+      <button class="finalize" data-id="1">Atsiimti lėšas</button>
+
+    </div>
+    
+      
+      <div class="kortele" data-id="2">
+        <p>Rudens karalienė</p>
+        <img src="images/lape2.jpg">
+        <p class="highest-bid" data-id="2">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="2">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="2">Pradėti aukcioną</button>
+        <button class="finish" data-id="2">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="2">Pateikti statymą</button>
+        <button class="finalize" data-id="2">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="3">
+        <p>Pievoje</p>
+        <img src="images/lape3.jpg">
+        <p class="highest-bid" data-id="3">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="3">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="3">Pradėti aukcioną</button>
+        <button class="finish" data-id="3">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="3">Pateikti statymą</button>
+        <button class="finalize" data-id="3">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="4">
+        <p>Gamtos apsupty</p>
+        <img src="images/lape4.jpg">
+        <p class="highest-bid" data-id="4">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="4">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="4">Pradėti aukcioną</button>
+        <button class="finish" data-id="4">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="4">Pateikti statymą</button>
+        <button class="finalize" data-id="4">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="5">
+        <p>Romantika</p>
+        <img src="images/lape5.jpg">
+        <p class="highest-bid" data-id="5">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="5">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="5">Pradėti aukcioną</button>
+        <button class="finish" data-id="5">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="5">Pateikti statymą</button>
+        <button class="finalize" data-id="5">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="6">
+        <p>Žiema ir aš</p>
+        <img src="images/lape6.jpg">
+        <p class="highest-bid" data-id="6">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="6">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="6">Pradėti aukcioną</button>
+        <button class="finish" data-id="6">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="6">Pateikti statymą</button>
+        <button class="finalize" data-id="6">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="7">
+        <p>Kovotoja</p>
+        <img src="images/lape7.jpg">
+        <p class="highest-bid" data-id="1">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="7">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="7">Pradėti aukcioną</button>
+        <button class="finish" data-id="7">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="7">Pateikti statymą</button>
+        <button class="finalize" data-id="7">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="8">
+        <p>Išdidumas</p>
+        <img src="images/lape8.jpg">
+        <p class="highest-bid" data-id="8">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="8">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="8">Pradėti aukcioną</button>
+        <button class="finish" data-id="8">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="8">Pateikti statymą</button>
+        <button class="finalize" data-id="8">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="9">
+        <p>Gamtos grožis</p>
+        <img src="images/lape9.jpg">
+        <p class="highest-bid" data-id="9">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="9">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="9">Pradėti aukcioną</button>
+        <button class="finish" data-id="9">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="9">Pateikti statymą</button>
+        <button class="finalize" data-id="9">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="10">
+        <p>Aukštyn</p>
+        <img src="images/lape10.jpg">
+        <p class="highest-bid" data-id="10">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="10">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="10">Pradėti aukcioną</button>
+        <button class="finish" data-id="10">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="10">Pateikti statymą</button>
+        <button class="finalize" data-id="10">Atsiimti lėšas</button>
+
+      </div>
+      <div class="kortele" data-id="11">
+        <p>Skaniai pavalgiau</p>
+        <img src="images/lape11.jpg">
+        <p class="highest-bid" data-id="11">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="11">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="11">Pradėti aukcioną</button>
+        <button class="finish" data-id="11">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="11">Pateikti statymą</button>
+        <button class="finalize" data-id="11">Atsiimti lėšas</button>
+      </div>
+      <div class="kortele" data-id="12">
+        <p>Įniršusi dama</p>
+        <img src="images/lape12.jpg">
+        <p class="highest-bid" data-id="12">Didžiausias statymas: Statymų nėra</p>
+        <p class="auction-state" data-id="12">Būsena: </p>
+        <p class="error" style="color: red;"></p>
+        <button class="start" data-id="12">Pradėti aukcioną</button>
+        <button class="finish" data-id="12">Stabdyti aukcioną</button>
+        <button class="place-bid" data-id="12">Pateikti statymą</button>
+        <button class="finalize" data-id="12">Atsiimti lėšas</button>
+      </div>
+    </div>
+  </div>
+    <section id="connectionSection">
+      <button id="connectWallet">Prisijungti su MetaMask</button>
+      <p id="account">Neprisijungta</p>
+    </section>  
+    <section id="ownerSection">
+      <button id="checkOwner">Patikrinti savininką</button>
+    </section>
+    
+</body>
+</html>
