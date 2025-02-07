@@ -64,14 +64,9 @@ contract MultiItemAuction {
     function initializeItem(uint itemId) internal {
         require(itemId > 0 && itemId <= 12, "Netinkamas aukciono ID");
         Item storage item = itemsMap[itemId];
-        // Gali būti, kad kontraktas iškviečiamas tik kartą konstruktoriaus metu,
-        // todėl papildomų patikrinimų, ar jis jau sukurtas, neprireiks.
-        // Jei visgi norite, galite pridėti require, kad būsenos keisti negalima jei jau sukurta.
-        
         item.highestBindingBid = 0;
         item.highestBidder = payable(address(0));
         item.auctionState = State.Created;
-        // startTime ir endTime bus nustatyti kai bus kviečiamas startAuction
     }
 
     // Funkcija pradėti aukcioną
